@@ -1,4 +1,4 @@
-### 1. Phân tích lỗi kỹ thuật và cơ chế Falsy Value
+### 1. Phân tích lỗi 
 
 - **Nguyên nhân lỗi:** Hàm updateDevice sử dụng if (updatedData.isActive) và if (updatedData.powerWatts) để kiểm tra dữ liệu cập nhật. Vì false và 0 là Falsy Value nên các lệnh cập nhật bị bỏ qua, khiến điều hòa không tắt được và công suất đèn không về 0W.
 
